@@ -1,0 +1,260 @@
+/* Controls */
+div#accessibility-links {
+	cursor: auto;
+	border: 1px solid #b5b5b5;
+	background-color: #EEE;
+	z-index: 99999;
+	padding: 0;
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
+	width: fit-content;
+	box-sizing: content-box;
+}
+
+html.scr_highcontrast {
+	-webkit-filter: invert(100%);
+	filter: invert(100%);
+}
+
+.topright {
+	top: 0;
+	right: 0;
+}
+
+.topleft {
+	top: 0;
+	left: 0;
+}
+
+.bottomright {
+	bottom: 0;
+	right: 0;
+}
+
+.bottomleft {
+	bottom: 0;
+	left: 0;
+}
+
+div#accessibility-links.bottomleft div#tts_message {
+	top: -37px;
+	left: 0;
+}
+
+div#accessibility-links.topleft div#tts_message {
+	top: 37px;
+	left: 0;
+}
+
+.fixed {
+	position: fixed;
+}
+
+.absolute {
+	position: absolute;
+}
+
+.relative {
+	position: relative;
+	float: none;
+	clear: both;
+}
+
+div.scbasebin {
+	border: none !important;
+	height: 35px;
+	width: 50px;
+	float: left;
+	font-size: 13px;
+	position: relative;
+}
+
+div.scbasebin.screenreader.text {
+	width: 80px;
+	text-align: center;
+	background: url('images/logo.png') no-repeat;
+	background-position: 2px 0;
+}
+
+div.scbasebin.screenreader.text.scr_nolabel {
+	width: 40px;
+}
+
+div.scbasebin.speaker {
+	text-align: center;
+	width: 140px;
+}
+
+div#frclr {
+	clear: left;
+	width: 0;
+	height: 25px;
+}
+
+div#accessibility-links label {
+	color: #111;
+	font-size: 11px;
+	font-weight: bold;
+	line-height: normal;
+	height: 20px;
+	float: left;
+	cursor: auto;
+	padding-left: 36px;
+	margin-top: 2px;
+}
+
+div#accessibility-links label.fr_label.startapp {
+	background: transparent !important;
+}
+
+div#accessibility-links button {
+	border: none !important;
+	height: 32px;
+	width: 32px;
+	cursor: pointer;
+	background-size: 70%;
+	display: inline-block;
+	margin: 5px 0 0 0;
+	padding: 0;
+}
+
+div#accessibility-links button#fr_screenreader_play {
+	background: url('images/play.png') no-repeat;
+	border: none !important;
+	margin-left: 2px;
+}
+
+div#accessibility-links button#fr_screenreader_pause {
+	background: url('images/pause.png') no-repeat;
+	border: none !important;
+}
+
+div#accessibility-links button#fr_screenreader_pause.active {
+	background: url('images/paused_active.png') no-repeat;
+}
+
+div#accessibility-links button#fr_screenreader_stop {
+	background: url('images/stop.png') no-repeat;
+	border: none !important;
+}
+
+div#accessibility-links button#fr_screenreader_font_increase {
+	background: url('images/increase.png') no-repeat;
+	border: none !important;
+	margin-left: 8px;
+}
+
+div#accessibility-links button#fr_screenreader_font_decrease {
+	background: url('images/decrease.png') no-repeat;
+	border: none !important;
+}
+
+div#accessibility-links button#fr_screenreader_font_reset {
+	background: url('images/reset.png') no-repeat;
+	border: none !important;
+}
+
+div#accessibility-links button#fr_screenreader_highcontrast {
+	background: url('images/highcontrast.png') no-repeat;
+	border: none !important;
+	margin-left: 10px;
+}
+
+div#accessibility-links button#fr_screenreader_highcontrast2 {
+	background: url('images/highcontrast2.png') no-repeat;
+	border: none !important;
+}
+
+div#accessibility-links button#fr_screenreader_highcontrast3 {
+	background: url('images/highcontrast3.png') no-repeat;
+	border: none !important;
+}
+/* TTS Screen reader engine */
+div#tts_message {
+	cursor: auto;
+	position: absolute;
+	z-index: 10000;
+	background-color: #EEE;
+	top: -1px;
+	left: -162px;
+	width: 162px;
+}
+
+div#msgtext {
+	height: 30px;
+	font-size: 11px;
+	font-weight: bold;
+	padding: 3px 0 2px 0;
+	text-align: center;
+	background: url('images/exclamation.png') no-repeat;
+	padding-left: 35px;
+	width: 125px;
+	background-position-x: 3px;
+	border: 1px solid #b5b5b5;
+	line-height: 16px;
+}
+
+div#stopbtn {
+	height: 32px;
+	width: 32px;
+	margin: 2px 0 0 5px;
+	background-image: url('images/acc_stop.png');
+	background-repeat: no-repeat;
+	padding: 2px;
+	float: left;
+	cursor: pointer;
+}
+
+div#playicon {
+	width: 162px;
+	height: 37px;
+	background-image: url('images/waves.gif') !important;
+	z-index: 99999;
+}
+
+div#sm2-container {
+	height: 0;
+	width: 0;
+	top: -10000;
+	left: -10000;
+	position: absolute;
+	display: none;
+}
+
+div.volume_step {
+	width: 5px;
+	border: 1px solid #333;
+	position: absolute;
+	bottom: 5px;
+	margin-left: 2px;
+	cursor: pointer;
+}
+
+div.volume_step.active {
+	background-color: #000; 
+}
+
+#volume_step1 {
+	height: 5px;
+	left: 2px;
+}
+
+#volume_step2 {
+	height: 10px;
+	left: 11px;
+}
+
+#volume_step3 {
+	height: 15px;
+	left: 20px;
+}
+
+#volume_step4 {
+	height: 20px;
+	left: 29px;
+}
+
+#volume_step5 {
+	height: 25px;
+	left: 38px;
+}
